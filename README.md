@@ -16,7 +16,7 @@ Install
 
 Perform actions
 ----------------
-- Unpack archive and place 'ForAcceptance' folder on Desktop or any suitable place where it won't be moved or deleted from
+- If download as archive > Unpack archive and place 'ForAcceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'ForAcceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
 
 - In 'acceptance.py' find the next line 'sys.path.append("C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")' and change address to the 'filesSendingTest' folder according to it's real location on your computer (basically change the address from the beginning to the ForAcceptance, the rest of the line leave as is)
 
@@ -32,6 +32,8 @@ Perform actions
 
 - Connect to customer's Tailscale network (if don't then report can't be received)
 
+- Download 'sensitive.csv' from the project's Confluence and place the file in the 'ForAcceptance' folder
+
 
 Now you can run the test
 ------------------------
@@ -45,4 +47,4 @@ Now you can run the test
 
 --------------------------------------------------------------------------------
 NOTE: cmd might automatically close itself if user closed notepad++ application. 
-      So, make sure to save GUIDs if planning to use them in future.
+      So, please make sure to save GUIDs if you plan to use them in the future.
