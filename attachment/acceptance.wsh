@@ -1,0 +1,432 @@
+{
+  "account_id": 360,
+  "customer_id": 11523,
+  "email_guid": "28c0dfc7-9249-4b27-b5f6-36f9bf14d471",
+  "originating_ip": "199.91.53.63",
+  "email_size": 114589,
+  "direction": "incoming",
+  "delivery_state": "spam_quarantine",
+  "from_address": "8f93fe72-f6df-11e8-a37e-0242ac110002@bounce.r.livingsocial.com",
+  "to_addresses": [
+    {
+      "to_address": "shih.huangti@sssclient.com"
+    }
+  ],
+  "cc_addresses": [],
+  "bcc_addresses": [],
+  "received_date": "20/12/2018 3:48:09 PM",
+  "subject": "Day Trip To Wine Country + Up to 20% OFF",
+  "attachments": [],
+  "verdict": "Spam",
+  "verdict_details": "Score is 206",
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,500,600,700,800"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css?family=Nunito:700"
+    },
+    {
+      "url": "http://www.livingsocial.com?utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=logo&d=groupon&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/goods"
+    },
+    {
+      "url": "https://www.livingsocial.com/goods"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?category=things-to-do&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=ACTIVITIES&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?category=beauty-and-spas&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=BEAUTY&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?category=food-and-drink&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=FOOD"
+    },
+    {
+      "url": "https://www.livingsocial.com/goods?utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=SHOP&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?topcategory=travel&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=TRAVEL&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/occasion/gifts?utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=header&c=nav&d=GIFTS&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/occasion/sitewide-sale?p=1&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=msg&c=32711&d=generic_message-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/occasion/sitewide-sale?p=1&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=msg&c=32711&d=generic_message-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/occasion/sitewide-sale?p=1&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=msg&c=32711&d=generic_message-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/new-york-wine-events-1-1?p=2&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/new-york-wine-events-1-1?p=2&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/new-york-wine-events-1-1?p=2&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/the-spa-on-wall-street-2?p=3&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/the-spa-on-wall-street-2?p=3&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/the-spa-on-wall-street-2?p=3&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/ken-moadel-m-d-new-york-eye-specialists-1?p=4&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/ken-moadel-m-d-new-york-eye-specialists-1?p=4&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/ken-moadel-m-d-new-york-eye-specialists-1?p=4&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155386&layout=marquee&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155389&sz=116x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155390&sz=69x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/shape-house-1?p=5&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/shape-house-1?p=5&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/shape-house-1?p=5&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/skin-spa-13?p=6&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/skin-spa-13?p=6&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/skin-spa-13?p=6&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/sev-laser-new-york?p=7&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/sev-laser-new-york?p=7&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/sev-laser-new-york?p=7&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/bury-the-hatchet-brooklyn-1?p=8&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/bury-the-hatchet-brooklyn-1?p=8&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/bury-the-hatchet-brooklyn-1?p=8&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/icon-parking-141?p=9&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/icon-parking-141?p=9&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/icon-parking-141?p=9&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/eden-dayspa?p=10&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/eden-dayspa?p=10&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/eden-dayspa?p=10&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/jj-eyelashes-herald-sq-1-1?p=11&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/jj-eyelashes-herald-sq-1-1?p=11&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/jj-eyelashes-herald-sq-1-1?p=11&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/proline-car-stereo-21?p=12&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/proline-car-stereo-21?p=12&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/proline-car-stereo-21?p=12&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/talias-steakhouse-bar?p=13&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/talias-steakhouse-bar?p=13&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-merchant&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/deals/talias-steakhouse-bar?p=13&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=deal-button&d=deal-page&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?locale=en_US&topCategory=all-deals&p=14&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=banner&d=dynamic-banner-4&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/browse/?locale=en_US&topCategory=all-deals&p=14&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=body&c=banner&d=dynamic-banner-4&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=178399&sz=300x250&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155373&sz=116x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155374&sz=69x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=178402&sz=300x250&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155373&sz=116x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155374&sz=69x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155391&layout=marquee&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155394&sz=116x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "http://li.livingsocial.com/click?s=155395&sz=69x15&li=newsletter_im&m=3fc8eedcac81e52303124d68da11e7d8&p=2018-12-20T15:48:06Z"
+    },
+    {
+      "url": "https://www.livingsocial.com/mobile?utm_source=email&utm_medium=email&utm_campaign=LS_DLBannerEmailFooter&grpn_dl=LS_DLBannerEmailFooter"
+    },
+    {
+      "url": "https://www.livingsocial.com/mobile?utm_source=email&utm_medium=email&utm_campaign=LS_DLBannerEmailFooter&grpn_dl=LS_DLBannerEmailFooter"
+    },
+    {
+      "url": "https://www.instagram.com/livingsocial"
+    },
+    {
+      "url": "https://twitter.com/LivingSocial"
+    },
+    {
+      "url": "https://www.pinterest.com/livingsocial"
+    },
+    {
+      "url": "https://www.facebook.com/LivingSocial"
+    },
+    {
+      "url": "http://www.livingsocial.com/customer_support?utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=footer&c=link&d=support&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "url": "https://www.livingsocial.com/subscription_center/manage/consumer/8f93fe72-f6df-11e8-a37e-0242ac110002?cmplistId=division:new-york&user=83f585784c3fa88ebccdc4d50e89cf97593894913d9525acd585f6c1b982c739&utm_source=newsletter_im&utm_medium=email&t_division=new-york&date=20181220&uu=8f93fe72-f6df-11e8-a37e-0242ac110002&CID=US&tx=0&s=footer&c=link&d=unsubscribe&utm_campaign=8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    }
+  ],
+  "rules": [
+    {
+      "rule_action": "DMARC Verifying Pass",
+      "rule_description": "(Default) Signature Verification",
+      "rule_data": "DKIM Pass or SPF Pass",
+      "final_action": 0
+    },
+    {
+      "rule_action": "Add Message Header",
+      "rule_description": "(Default) Signature Verification",
+      "rule_data": "Authentication-Results: in-stage-01; spf=pass smtp.mailfrom=8f93fe72-f6df-11e8-a37e-0242ac110002@bounce.r.livingsocial.com; dkim=pass header.i=@r.livingsocial.com; dmarc=pass action=reject header.from=livingsocial.com;",
+      "final_action": 0
+    },
+    {
+      "rule_action": "Add to Spam Score",
+      "rule_description": "(Default) CoreService Suspect",
+      "rule_data": "105",
+      "final_action": 0
+    },
+    {
+      "rule_action": "Add to Spam Score",
+      "rule_description": "Customers - Newsletter Spam",
+      "rule_data": "101",
+      "final_action": 0
+    },
+    {
+      "rule_action": "Prefix Text to Subject",
+      "rule_description": "Medium Reputation Marketing",
+      "rule_data": "[Marketing Medium]",
+      "final_action": 0
+    },
+    {
+      "rule_action": "Quarantine",
+      "rule_description": "Possible Spam",
+      "rule_data": "12046",
+      "final_action": 1
+    }
+  ],
+  "email_headers": [
+    {
+      "header_name": "Authentication-Results",
+      "header_value": " in-stage-01; spf=pass smtp.mailfrom=8f93fe72-f6df-11e8-a37e-0242ac110002@bounce.r.livingsocial.com; dkim=pass header.i=@r.livingsocial.com; dmarc=pass action=reject header.from=livingsocial.com;"
+    },
+    {
+      "header_name": "Received",
+      "header_value": "from mta63s2.r.livingsocial.com ([199.91.53.63]) by IN-STAGE-01 over TLS secured channel with Microsoft SMTPSVC(8.5.9600.16384);\t Thu, 20 Dec 2018 15:48:07 +0000"
+    },
+    {
+      "header_name": "DKIM-Signature",
+      "header_value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=r.livingsocial.com;\ts=s2048d20180404; t=1545320886;\tbh=1uWjN8ZcZGlhHJ24OMTZwzuixl+BoWA6vFs8AM1P4LY=;\th=Date:From:To:Message-ID:Subject:Content-Type;\tb=EJ3M08J3rVVKT8QR+4oFwTn/jFKgMxzN9dWwP/vIDgg8gY2gh9bRh0QepdQOsDkBr\t g9YvMMunDnD4LejJtxTaYLh0azfWS2tffLwBa5+kEUfgRO8dwgUfdjwigvvre23hLB\t 1cLtrjI7GzrNp7hOtp4X3k6YtSoJovm4ToUe7rqYK+XwRZkDJq5ZUeC5YtIpPM+f+K\t fwWXxpNxWtud1Hb8KmNc+eJwET7HIB0zld9CocVwm9C3GGAwBcLLU8GQnGJn6I01/X\t 0haPK98MmiTXeixu874cJX7lFjDcUipB7iS3qpGJ9lb6wkXpvmtAOAOu0OhUxR3lJR\t 1tBNzy887jfvQ=="
+    },
+    {
+      "header_name": "Date",
+      "header_value": "Thu, 20 Dec 2018 15:48:06 +0000"
+    },
+    {
+      "header_name": "From",
+      "header_value": "LivingSocial New York City <noreply@r.livingsocial.com>"
+    },
+    {
+      "header_name": "To",
+      "header_value": "<shih.huangti@sssclient.com>"
+    },
+    {
+      "header_name": "Message-ID",
+      "header_value": "<448021415.76168624.1545320886245.JavaMail.rocketman@push-dispatcher32.snc1>"
+    },
+    {
+      "header_name": "Subject",
+      "header_value": "[Marketing Medium] Day Trip To Wine Country + Up to 20% OFF"
+    },
+    {
+      "header_name": "MIME-Version",
+      "header_value": "1.0"
+    },
+    {
+      "header_name": "Content-Type",
+      "header_value": "text/html"
+    },
+    {
+      "header_name": "Content-Transfer-Encoding",
+      "header_value": "quoted-printable"
+    },
+    {
+      "header_name": "X-RM-Clr",
+      "header_value": "8f93fe72-f6df-11e8-a37e-0242ac110002"
+    },
+    {
+      "header_name": "X-RM-SendId",
+      "header_value": "8632c798-9162-43a7-bc8f-67283d97065c_0_20181220"
+    },
+    {
+      "header_name": "X-RM-SenderScore",
+      "header_value": "101"
+    },
+    {
+      "header_name": "X-RM-EmailName",
+      "header_value": "daily-email_new-york_us_im_ls_g1"
+    },
+    {
+      "header_name": "X-Brand",
+      "header_value": "livingsocial"
+    },
+    {
+      "header_name": "X-MSFBL",
+      "header_value": "OGY5M2ZlNzItZjZkZi0xMWU4LWEzN2UtMDI0MmFjMTEwMDAyOmJhdGNoOjg2MzJjNzk4LTkxNjItNDNhNy1iYzhmLTY3MjgzZDk3MDY1Y18wXzIwMTgxMjIwOm51bGw6VVM="
+    },
+    {
+      "header_name": "List-Unsubscribe",
+      "header_value": "<mailto:8f93fe72-f6df-11e8-a37e-0242ac110002@unsub.r.livingsocial.com?subject=OGY5M2ZlNzItZjZkZi0xMWU4LWEzN2UtMDI0MmFjMTEwMDAyOmJhdGNoOjg2MzJjNzk4LTkxNjItNDNhNy1iYzhmLTY3MjgzZDk3MDY1Y18wXzIwMTgxMjIwOm51bGw6VVM=>"
+    },
+    {
+      "header_name": "X-RPCampaign",
+      "header_value": "Groupondailyemailnewyorkusimlsg120181220"
+    },
+    {
+      "header_name": "X-RPTags",
+      "header_value": "daily-email_new-york_us_im_ls_g1"
+    },
+    {
+      "header_name": "X-Recruiting",
+      "header_value": "Interested in headers? Join us: www.groupon.com/techjobs/"
+    },
+    {
+      "header_name": "List-Id",
+      "header_value": "<daily-email_new-york_us_im_ls_g1_20181220.groupon>"
+    },
+    {
+      "header_name": "X-Feedback-ID",
+      "header_value": "r.livingsocial.com:daily-email_new-york_us_im_ls_g1:8632c798-9162-43a7-bc8f-67283d97065c_0_20181220:groupon"
+    },
+    {
+      "header_name": "Return-Path",
+      "header_value": "8f93fe72-f6df-11e8-a37e-0242ac110002@bounce.r.livingsocial.com"
+    },
+    {
+      "header_name": "X-OriginalArrivalTime",
+      "header_value": "20 Dec 2018 15:48:07.0800 (UTC) FILETIME=[670EA780:01D4987B]"
+    }
+  ],
+  "smtp_conversation": [
+    {
+      "date_time": "20/12/2018 3:48:06 PM",
+      "server_reply": "RECEIVE:ehlo mta63s2.r.livingsocial.com",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:06 PM",
+      "server_reply": "SEND:",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "RECEIVE:ehlo mta63s2.r.livingsocial.com",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "SEND:",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "RECEIVE:mail FROM:<8f93fe72-f6df-11e8-a37e-0242ac110002@bounce.r.livingsocial.com>",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "SEND:",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "RECEIVE:rcpt TO:<shih.huangti@sssclient.com>",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:07 PM",
+      "server_reply": "SEND:250 <shih.huangti@sssclient.com>\r\n",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:08 PM",
+      "server_reply": "RECEIVE:_eod",
+      "destination_server": "199.91.53.63"
+    },
+    {
+      "date_time": "20/12/2018 3:48:08 PM",
+      "server_reply": "SEND:250 Message Received\r\n",
+      "destination_server": "199.91.53.63"
+    }
+  ]
+}
