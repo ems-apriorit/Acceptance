@@ -1,13 +1,16 @@
 import smtplib
 from email.message import EmailMessage
+from login import read_csv_to_list
+address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+creds = read_csv_to_list(address)
 
 
 def in_one_session():
     j = 0
-    email1 = 'user5@sssclient.com'
-    email2 = 'emsec.acc@gmail.com'
-    inbound = '52.178.193.223'
-    outbound = '40.69.46.135'
+    email1 = f'{creds[17]}'
+    email2 = f'{creds[23]}'
+    inbound = f'{creds[15]}'
+    outbound = f'{creds[16]}'
     port = 25
 
     messagecount = 3

@@ -1,23 +1,14 @@
 #!/usr/bin/env python3.6
 
-import requests
-import json
-from datetime import datetime, timedelta
-import sys
-import re
 import time
 from login import login_get_report
-from login import get_system_time_minus_few_minutes
 from filterOutput import acceptance_test
 from in_one_session import in_one_session
 import subprocess
-import os
 from languages_test import langs
-sys.path.append("C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")
-from filesSendingSBDisabled2 import send_sbd
-from filesSendingSBDisabled2 import determine_path1
-from filesSendingSBEnabled2 import determine_path2
-from filesSendingSBEnabled2 import send_ebd
+sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
+from filesSendingTest.filesSendingSBDisabled2 import send_sbd
+from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
 
 def run_powershell_script(script_path):
@@ -55,7 +46,7 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
-    script_path3 = r'C:\\Users\\apriorit\\Desktop\\ForAcceptance\\enable_sandbox.ps1'
+    script_path3 = r'C:\Users\apriorit\Desktop\ForAcceptance\enable_sandbox.ps1'
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')

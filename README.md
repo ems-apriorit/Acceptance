@@ -18,15 +18,7 @@ Perform actions
 ----------------
 - If download as archive > Unpack archive and place 'ForAcceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'ForAcceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
 
-- In 'acceptance.py' find the next line 'sys.path.append("C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")' and change address to the 'filesSendingTest' folder according to it's real location on your computer (basically change the address from the beginning to the ForAcceptance, the rest of the line leave as is)
-
-- Repeat the previous step for the variables 'script_path1' & 'script_path2' & 'script_path3' in the 'acceptance.py'
-
-- 'filterOutput.py' edit result = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result.txt' as for examples in the previous steps
-
-- 'fileshipping.py' edit result2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result fileshipper.txt' as for examples in the previous steps
-
-- 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\ForAcceptance' so it points to the 'ForAcceptance' folder on the PC
+- In all present '*.py' files find all the folder addresses like 'C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest...' and change this part of it 'C:\Users\apriorit\Desktop\ForAcceptance\' so it correcly point to the folder with the acceptance test files.
 
 - 'acceptance.bat' check that NPP_PATH="C:\Program Files\Notepad++\notepad++.exe" points to the folder with executable of notepad++
 

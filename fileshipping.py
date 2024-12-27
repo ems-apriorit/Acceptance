@@ -1,8 +1,6 @@
 import requests
 import json
 from datetime import datetime, timedelta
-import sys
-import subprocess
 import re
 
 result2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result fileshipper.txt'

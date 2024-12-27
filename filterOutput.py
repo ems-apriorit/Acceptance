@@ -1,4 +1,3 @@
-import json
 import datetime
 result = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result.txt'
 
