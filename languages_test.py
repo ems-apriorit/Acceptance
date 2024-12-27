@@ -1,7 +1,11 @@
 import smtplib
 from email.message import EmailMessage
 from login import read_csv_to_list
+<<<<<<< HEAD
 address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+=======
+address = r'C:\Users\k13vl\PycharmProjects\Acceptance\sensitive.csv'
+>>>>>>> 029f940c60d37aba900d750a86a332af203a1050
 creds = read_csv_to_list(address)
 
 

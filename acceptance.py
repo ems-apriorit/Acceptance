@@ -6,7 +6,12 @@ from filterOutput import acceptance_test
 from in_one_session import in_one_session
 import subprocess
 from languages_test import langs
+<<<<<<< HEAD
 sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
+=======
+#sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
+sys.path.append(r"C:\Users\k13vl\PycharmProjects\Acceptance\filesSendingTest")
+>>>>>>> 029f940c60d37aba900d750a86a332af203a1050
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
@@ -20,8 +25,8 @@ def run_powershell_script(script_path):
 
 if __name__ == "__main__":
     # Provide the path to your PowerShell script
-    script_path1 = r'C:\Users\apriorit\Desktop\ForAcceptance\dbcommand.ps1'
-    script_path2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance_sending_messages.ps1'
+    script_path1 = r'C:\Users\k13vl\PycharmProjects\Acceptance\dbcommand.ps1'
+    script_path2 = r'C:\Users\k13vl\PycharmProjects\Acceptance\acceptance_sending_messages.ps1'
     print('===== Updating customers DB rules and brand. =====\n')
     run_powershell_script(script_path1)
     print('Sending the main pack of test messages.\n')
@@ -46,7 +51,11 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
+<<<<<<< HEAD
     script_path3 = r'C:\Users\apriorit\Desktop\ForAcceptance\enable_sandbox.ps1'
+=======
+    script_path3 = r'C:\Users\k13vl\PycharmProjects\Acceptance\enable_sandbox.ps1'
+>>>>>>> 029f940c60d37aba900d750a86a332af203a1050
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')
