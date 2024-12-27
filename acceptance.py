@@ -5,8 +5,9 @@ from login import login_get_report
 from filterOutput import acceptance_test
 from in_one_session import in_one_session
 import subprocess
+import sys
 from languages_test import langs
-sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
+sys.path.append(r'C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest')
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
@@ -20,8 +21,8 @@ def run_powershell_script(script_path):
 
 if __name__ == "__main__":
     # Provide the path to your PowerShell script
-    script_path1 = r'C:\Users\k13vl\PycharmProjects\Acceptance\dbcommand.ps1'
-    script_path2 = r'C:\Users\k13vl\PycharmProjects\Acceptance\acceptance_sending_messages.ps1'
+    script_path1 = r'C:\Users\apriorit\Desktop\ForAcceptance\dbcommand.ps1'
+    script_path2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance_sending_messages.ps1'
     print('===== Updating customers DB rules and brand. =====\n')
     run_powershell_script(script_path1)
     print('Sending the main pack of test messages.\n')
@@ -54,6 +55,7 @@ def main():
     print('\n')
     send_ebd()    # send a list of files with sandbox enabled 
     print('\n\nFinished')
+
 
 if __name__ == '__main__':
     main()
