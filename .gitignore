@@ -1,0 +1,9 @@
+sensitive.csv
+acceptance2.py
+acceptance_backup.py
+acceptance result.txt
+acceptance result fileshipper.txt
+/__pycache__/
+/filesSendingTest/__pycache__/
+/filesSendingTest/filesSendingSBDisabled.py
+/filesSendingTest/filesSendingSBEnabled.py

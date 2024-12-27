@@ -1,0 +1,156 @@
+Received: from smtp2.us.scanscope.net ([52.200.119.29]) by mail2.us.scanscope.net with Microsoft SMTPSVC(10.0.17763.1697);
+	 Wed, 20 Mar 2024 13:08:56 +0000
+From: <postmaster@scanscope.net>
+To: mdunn@vetpartners.com
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9B095B5ADSN=_01D06672AB2FC3F3001690ACBLU004?OMC2S15.h"
+Subject: Delivery Status Notification (Failure)
+Return-Path: <>
+Message-ID:
+ <CNUSMTA241d02e4bb-2a52-4a45-8ade-024209864e94@mail2.us.scanscope.net>
+X-OriginalArrivalTime: 20 Mar 2024 13:08:56.0060 (UTC) FILETIME=[C3A98BC0:01DA7AC7]
+Date: Wed, 20 Mar 2024 13:08:56 +0000
+
+--9B095B5ADSN=_01D06672AB2FC3F3001690ACBLU004?OMC2S15.h
+Content-Type: text/plain; charset="unicode-1-1-utf-7"
+
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+       store+3505717321@t.shopifyemail.com
+
+
+--9B095B5ADSN=_01D06672AB2FC3F3001690ACBLU004?OMC2S15.h
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;smtp2.us.scanscope.net
+Received-From-MTA: dns;BLU182-W50
+
+Final-Recipient: rfc822;store+3505717321@t.shopifyemail.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp;512 5.0.0 Domain does not exist.
+
+
+
+--9B095B5ADSN=_01D06672AB2FC3F3001690ACBLU004?OMC2S15.h
+Content-Type: message/rfc822
+
+DKIM-Signature: v=1; a=rsa-sha256; d=vetpartners.com; s=ussems;
+	c=relaxed/relaxed; q=dns/txt; i=mdunn@vetpartners.com; t=1710940129;
+	h=from:date:to:message-id:subject;
+	bh=noVa41jzOgvlxlGKqZbBiEcRXgWAi7+ZS758RPorWyk=;
+	b=fUjxsfh39VCGNkasUCb7ICNzr0R8Wmm+JyLVg5WPR5UMrX+auVxHcHAwPpVCjidlMEvcA2PT27Q
+	+/75VNj3B7N6zYPSPYTlm+CC1LHYN5BGtnQXxxoFU/BWEVnlcmJMANKWMTYhs/tuUo8/9bIEkeC6X
+	An6eZ+p2m6SbnoLKhBs=
+Received: from NAM04-DM6-obe.outbound.protection.outlook.com ([104.47.73.41]) by smtp2.us.scanscope.net over TLS secured channel with Microsoft SMTPSVC(10.0.17763.1697);
+	 Wed, 20 Mar 2024 13:08:48 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=EE78V3dacgaoH8x/AkN48+nm4uzxLSXKCAacyT1kHEGVDN5dfZv5tUX/XXgMqY5dXNZxB47iz+leZOxSiLOu9S0fuO95dFPpTcj7r7mHQTZOTBXMBB8CrMdRsPYX4+cjRvnxA89ZFxiOwklMFfE5APCK/lKa3nJ2dU+IHbHHR6Cvm1Sflbd/SxaXu7FidvpUa3Syx5LEeGHhvydfIPLDvRV/NeHp0YWDFtLg9sjz3gK/hsKZtNzfdEDu4mgRwRXLqBwOIJZkfK1E0IR5ignctTmCyBsD3TJKDkz7s3mdBY+hFQA4HvLIBAXrPMaqIxpv7E0oDftskvIc/ZXBf+0O9w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=noVa41jzOgvlxlGKqZbBiEcRXgWAi7+ZS758RPorWyk=;
+ b=LYBP4QAoANQR+5rRsZ8HTbkYMk6lE4ENzqSVDGeboMdbhLhC1/t533g86v1QaFjWFwhY0ZQieLEVlfXbSoe+8nHnxLcFgGkuIcqXdEX3RgFIckGSspRaNCy3AqxPpwlmS54ZGssS+kiUV0n1eNqoH4pQl/fL8DRDY9g11viu9ASJ0bgAqljQsqW/yPnl/9nN2dSDVSRipIL1RaQCxKaFNapzsH6E8C/5jEGtJnB4qYwLYIa09bKgfO5S75rN9X8vKOd8cGJJMSDjhK9OWBKYd/+tlPSiVcvLsN5Qe0yYKEBHTxCflQ4L3lHXc//Rp0U0h7Pib6w7bHu7JrQitXh8iA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
+ action=none header.from=vetpartners.com; dkim=pass header.d=vetpartners.com;
+ arc=none
+Received: from SN7PR14MB7380.namprd14.prod.outlook.com (2603:10b6:806:272::10)
+ by MW4PR14MB5391.namprd14.prod.outlook.com (2603:10b6:303:16a::6) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7386.28; Wed, 20 Mar
+ 2024 13:08:46 +0000
+Received: from SN7PR14MB7380.namprd14.prod.outlook.com ([::1]) by
+ SN7PR14MB7380.namprd14.prod.outlook.com ([fe80::3338:612b:f8d:8399%4]) with
+ Microsoft SMTP Server id 15.20.7386.025; Wed, 20 Mar 2024 13:08:46 +0000
+From: Michael Dunn <mdunn@vetpartners.com>
+To: MyFaceSocks <store+3505717321@t.shopifyemail.com>
+Subject: Automatic reply: A shipment from order AU381176 is out for delivery
+Thread-Topic: A shipment from order AU381176 is out for delivery
+Thread-Index: AQHaese9+SNCSAxYxka76iwM6vB90rFAmeyy
+Date: Wed, 20 Mar 2024 13:08:46 +0000
+Message-ID:
+ <5a681f056d9c4993a9bdb06f9480f32c@SN7PR14MB7380.namprd14.prod.outlook.com>
+References: <E1030004-17BE7AF7CE629CEB-AF616E43@shopify.com>
+In-Reply-To: <E1030004-17BE7AF7CE629CEB-AF616E43@shopify.com>
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Inbox-Rules-Loop: mdunn@vetpartners.com
+X-MS-TNEF-Correlator:
+x-ms-exchange-parent-message-id:
+ <E1030004-17BE7AF7CE629CEB-AF616E43@shopify.com>
+auto-submitted: auto-generated
+x-ms-exchange-generated-message-source: Mailbox Rules Agent
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SN7PR14MB7380:EE_|MW4PR14MB5391:EE_
+x-ms-office365-filtering-correlation-id: 5702673b-2b9e-447d-a0e6-08dc48dee076
+x-ms-exchange-atpmessageproperties: SA
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ f89cH4+0yxbLdXSdCXwFhC9xtEDlJo41HSp9LEIQlbsjwWHS11U9la0CCkml5eavOpOE68fsvmyXmbg7Yz8abzG7lwhUbDmj15kPkqM2X3YBGW8S5EC/kJcxlhVatQzbDKJ+eGrvCEdjx482RgbTuKs92x9jo2dVezCl38w5SMOcS0VmyGAyos46vh9+hpqfWDtc2l0ni6OkYd6JEwycMECifRD8EV+bZudZ1Zb7mN2Ag75pL+IrTZ14NBQPMzQxwU0yzL5wk4DC33B+0JvcPnvmRmsQmrdfELfbZtAvD0SCKPCsBl8hOvHVGhjMAyrEdhOd8G8JOnZOMlWK9p/7tJuzPcn1Fz/5KD/uAaERSt/RpnQ/mYqdSwXHHhQ48qQlDlQPgKWyT010C3JNDamshWZJ/wR7ibnrkAKXMyvguPMn7/6llGht5EMFxhc8U+9UsiVyFEip3csraUdcjQ/tVdPKbHTnLVmcFpw7xpSB6xb37gDtpbI9SK71SYz0XRyHOb0R2PQWGxTvL4jBkD710KitN1FCvOOu600uWeDXuDrCGegXBHpiwHhKKaEZJQB0hxFIred9grqdg5rXtG5Sw550y3kMZ281rdZej5oG1P68EMICTbYm97V3eFFj5MckM6oUT3WT86zm4UzXssg5ST0/50P3grN1iBWNvNQ3V9Q=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN7PR14MB7380.namprd14.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230031)(50650200018)(376005)(1800799015)(366007)(80100003);DIR:OUT;SFP:1501;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ RjjsMbMfbglGrSg8AqTdF48slRfdNnRG+tKtBwGCkEJ+JfgRMXGCnTeT6lOA6Hsar2373yZaoFrMmgK1+RH5g+ZZScNgnpJRSSd8ikRw1aIjK3LHzhi7Wpwf1/AZ7HwP7obn/zlN8h85dbxIbHWSJ17nNcZx+EUsslzykXaidcpOZKbUyPGrclel0UX1MdDCWv14nG7Gae/5XFJWEDSG9eTJUxwa3CNVz7a098AtBqQlDdlmY0mWorElMpUb5zwvPLrqQcn2oHKdybJXafLfSgl1ovXnmvm5SMZubAPC64lGy1/ROtsq0C9CzvNxwLEa
+Content-Type: multipart/alternative;
+	boundary="_000_5a681f056d9c4993a9bdb06f9480f32cSN7PR14MB7380namprd14pr_"
+MIME-Version: 1.0
+X-OriginatorOrg: vetpartners.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SN7PR14MB7380.namprd14.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5702673b-2b9e-447d-a0e6-08dc48dee076
+X-MS-Exchange-CrossTenant-originalarrivaltime: 20 Mar 2024 13:08:46.5454
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 09162207-d0e8-4c5a-a04f-a6b778b23ee8
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MW4PR14MB5391
+Return-Path: <>
+X-OriginalArrivalTime: 20 Mar 2024 13:08:48.0386 (UTC) FILETIME=[BF169620:01DA7AC7]
+X-TLSLevel: Try
+
+--_000_5a681f056d9c4993a9bdb06f9480f32cSN7PR14MB7380namprd14pr_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+I am traveling Monday, 3/18 through Wednesday, 3/20 for meetings and will h=
+ave delayed responses to emails. If you have an urgent matter, please reach=
+ out to me at 903-742-5811. Thank you.
+
+Mike
+
+--_000_5a681f056d9c4993a9bdb06f9480f32cSN7PR14MB7380namprd14pr_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+</head>
+<body>
+<div dir=3D"ltr"><span style=3D"font-family:Calibri,sans-serif; font-size:1=
+1pt">I am traveling Monday, 3/18 through Wednesday, 3/20 for meetings and w=
+ill have delayed responses to emails. If you have an urgent matter, please =
+reach out to me at 903-742-5811. Thank
+ you.</span>
+<div class=3D"WordSection1" style=3D"">
+<p class=3D"MsoNormal" style=3D"margin:0in; font-size:11pt; font-family:Apt=
+os,sans-serif; text-autospace:none">
+<span style=3D"font-family:&quot;Calibri&quot;,sans-serif">&nbsp;</span></p=
+>
+<p class=3D"MsoNormal" style=3D"margin:0in; font-size:11pt; font-family:Apt=
+os,sans-serif; margin-bottom:5.0pt; text-autospace:none">
+<span style=3D"font-family:&quot;Calibri&quot;,sans-serif">Mike</span></p>
+</div>
+</div>
+</body>
+</html>
+
+--_000_5a681f056d9c4993a9bdb06f9480f32cSN7PR14MB7380namprd14pr_--
+
+--9B095B5ADSN=_01D06672AB2FC3F3001690ACBLU004?OMC2S15.h--
