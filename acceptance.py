@@ -46,15 +46,7 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
-<<<<<<< HEAD
     script_path3 = r'C:\Users\apriorit\Desktop\ForAcceptance\enable_sandbox.ps1'
-=======
-    script_path3 = r'C:\Users\k13vl\PycharmProjects\Acceptance\enable_sandbox.ps1'
-<<<<<<< HEAD
->>>>>>> 029f940c60d37aba900d750a86a332af203a1050
-=======
->>>>>>> 48892ebb8d4ba7ba0b79cc3c2486847ec8352274
->>>>>>> 7c17813fad773e8f1c3696f7bb864b8aa9c29510
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')
