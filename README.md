@@ -18,7 +18,7 @@ Perform actions
 ----------------
 - If download as archive > Unpack archive and place 'ForAcceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'ForAcceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
 
-- In 'acceptance.py' find the next line 'sys.path.append("C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")' and change address to the 'filesSendingTest' folder according to it's real location on your computer (basically change the address from the beginning to the ForAcceptance, the rest of the line leave as is)
+- In 'acceptance.py' find the next line 'sys.path.append(r"C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")' and change address to the 'filesSendingTest' folder according to it's real location on your computer (basically change the address from the beginning to the ForAcceptance, the rest of the line leave as is)
 
 - Repeat the previous step for the variables 'script_path1' & 'script_path2' & 'script_path3' in the 'acceptance.py'
 

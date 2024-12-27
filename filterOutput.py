@@ -1,6 +1,5 @@
-import json
 import datetime
-result = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result.txt'
+result = r'C:\Users\k13vl\PycharmProjects\Acceptance\acceptance result.txt'
 
 
 def acceptance_test(data):

@@ -1,13 +1,16 @@
 import smtplib
 from email.message import EmailMessage
+from login import read_csv_to_list
+address = r'C:\Users\k13vl\PycharmProjects\Acceptance\sensitive.csv'
+creds = read_csv_to_list(address)
 
 
 def langs():
     j = 0
-    email1 = 'user5@sssclient.com'
-    email2 = 'emsec.acc@gmail.com'
-    inbound = '52.178.193.223'
-    outbound = '40.69.46.135'
+    email1 = f'{creds[17]}'
+    email2 = f'{creds[23]}'
+    inbound = f'{creds[15]}'
+    outbound = f'{creds[16]}'
     port = 25
     lang = ['greek','chinese','japanese','korean','indian','cyrillic','arabic','thai']
     lang_text = ['Αυτό είναι ένα δοκιμαστικό μήνυμα','这是一条测试消息','これはテストメッセージです','이것은 테스트 메시지입니다',' यह एक परीक्षण संदेशहै ','Це тестове повідомлення','هذه رسالة اختبار',' นี่เป็นข้อความทดสอบ ']

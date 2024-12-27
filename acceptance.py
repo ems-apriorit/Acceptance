@@ -1,23 +1,15 @@
 #!/usr/bin/env python3.6
 
-import requests
-import json
-from datetime import datetime, timedelta
-import sys
-import re
 import time
 from login import login_get_report
-from login import get_system_time_minus_few_minutes
 from filterOutput import acceptance_test
 from in_one_session import in_one_session
 import subprocess
-import os
 from languages_test import langs
-sys.path.append("C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest")
-from filesSendingSBDisabled2 import send_sbd
-from filesSendingSBDisabled2 import determine_path1
-from filesSendingSBEnabled2 import determine_path2
-from filesSendingSBEnabled2 import send_ebd
+#sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
+sys.path.append(r"C:\Users\k13vl\PycharmProjects\Acceptance\filesSendingTest")
+from filesSendingTest.filesSendingSBDisabled2 import send_sbd
+from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
 
 def run_powershell_script(script_path):
@@ -29,8 +21,8 @@ def run_powershell_script(script_path):
 
 if __name__ == "__main__":
     # Provide the path to your PowerShell script
-    script_path1 = r'C:\Users\apriorit\Desktop\ForAcceptance\dbcommand.ps1'
-    script_path2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance_sending_messages.ps1'
+    script_path1 = r'C:\Users\k13vl\PycharmProjects\Acceptance\dbcommand.ps1'
+    script_path2 = r'C:\Users\k13vl\PycharmProjects\Acceptance\acceptance_sending_messages.ps1'
     print('===== Updating customers DB rules and brand. =====\n')
     run_powershell_script(script_path1)
     print('Sending the main pack of test messages.\n')
@@ -55,7 +47,7 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
-    script_path3 = r'C:\\Users\\apriorit\\Desktop\\ForAcceptance\\enable_sandbox.ps1'
+    script_path3 = r'C:\Users\k13vl\PycharmProjects\Acceptance\enable_sandbox.ps1'
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')
