@@ -6,12 +6,7 @@ from filterOutput import acceptance_test
 from in_one_session import in_one_session
 import subprocess
 from languages_test import langs
-<<<<<<< HEAD
 sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
-=======
-#sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
-sys.path.append(r"C:\Users\k13vl\PycharmProjects\Acceptance\filesSendingTest")
->>>>>>> 48892ebb8d4ba7ba0b79cc3c2486847ec8352274
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
