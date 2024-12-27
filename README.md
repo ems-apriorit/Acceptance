@@ -30,7 +30,11 @@ Perform actions
 - 'fileshipping.py' edit result2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result fileshipper.txt' as for examples in the previous steps
 
 - 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\ForAcceptance' so it points to the 'ForAcceptance' folder on the PC
+<<<<<<< HEAD
+>>>>>>> 029f940c60d37aba900d750a86a332af203a1050
+=======
 >>>>>>> 48892ebb8d4ba7ba0b79cc3c2486847ec8352274
+>>>>>>> 7c17813fad773e8f1c3696f7bb864b8aa9c29510
 
 - 'acceptance.bat' check that NPP_PATH="C:\Program Files\Notepad++\notepad++.exe" points to the folder with executable of notepad++
 
