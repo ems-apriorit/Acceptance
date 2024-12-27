@@ -7,17 +7,6 @@ from in_one_session import in_one_session
 import subprocess
 from languages_test import langs
 sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
-<<<<<<< HEAD
-=======
-=======
-#sys.path.append(r"C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest")
-sys.path.append(r"C:\Users\k13vl\PycharmProjects\Acceptance\filesSendingTest")
-<<<<<<< HEAD
->>>>>>> 029f940c60d37aba900d750a86a332af203a1050
-=======
->>>>>>> 48892ebb8d4ba7ba0b79cc3c2486847ec8352274
->>>>>>> 7c17813fad773e8f1c3696f7bb864b8aa9c29510
->>>>>>> 91ba989429ca18c56f6ecc5ccca23046f25b60c3
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
