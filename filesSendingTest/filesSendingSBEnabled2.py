@@ -10,18 +10,13 @@ from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from os.path import basename
 import platform
+address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
 
 # IN FOLDER_PATH VARIABLE USE ADDRESS ONLY WITH DOUBLE SLASH >>> \\
 # In other case erro will appear
 
 folder_path = 'C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest\\Acceptance'    # <<<< Provide a full path of the folder with test files
 listOfFilesInFolder = os.listdir(folder_path)    # Creates and contains a list of files from the folder above
-
-# SMTP data for script
-host = '52.178.193.223'
-sender = 'emsec.acc@gmail.com'
-recipient = 'user5@sssclient.com'
-body = 'test text'
 
 
 def determine_path2():
@@ -33,6 +28,26 @@ def determine_path2():
         return '/'
 
 
+def read_csv_to_list(file_path):
+    data = []
+    try:
+        with open(file_path, mode='r', encoding='utf-8') as file:
+            data = file.readlines()
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    return [line.strip() for line in data]  # Remove trailing newline characters
+    
+
+creds = read_csv_to_list(address)
+# SMTP data for script
+host = f'{creds[15]}'
+sender = f'{creds[22]}'
+recipient = f'{creds[17]}'
+body = 'test text'
+
+    
 def send_ebd():
     path_delimiter = determine_path2()
     
