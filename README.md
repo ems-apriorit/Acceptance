@@ -7,7 +7,7 @@ For test to run:
 
 Install
 --------
-- Install python 3.11 or higher
+- Install python 3.10 - 3.12. If higher than 3.12 telnetlib istn't supported so BDAT cases will be failed to run
 - Install pip
 - via pip Install modules (if not installed) > urllib3, telnetlib3, requests
 - Install PowerShell v. 5+

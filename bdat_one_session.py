@@ -13,7 +13,7 @@ def several_messages_one_session(name, server, port, sender, recipients):
             "body": "Body text aaa"
         },
         {
-            "from": "emsec.acc@gmail.com",
+            "from": f"{sender}",
             "to": f"{recipients[1]}",
             "subject": f"several_recipients one session {name}",
             "body": "Body text aaa 2"
@@ -53,6 +53,7 @@ Subject: {email['subject']}
             telnet.write(f"BDAT {len(binary_data)} LAST\r\n".encode())
             telnet.write(binary_data)
             telnet.read_until(b"250")
+            print('message is sent')
 
         # Quit the session
         telnet.write(b"QUIT\r\n")
