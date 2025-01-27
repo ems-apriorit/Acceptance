@@ -7,9 +7,16 @@ from in_one_session import in_one_session
 import subprocess
 import sys
 from languages_test import langs
+from bdat_one_session import several_messages_one_session
+from login import read_csv_to_list
 sys.path.append(r'C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest')
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
+
+address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+creds = read_csv_to_list(address)
+cred_rec = [creds[17], creds[17]]
+cred_rec2 = [creds[23], creds[23]]
 
 
 def run_powershell_script(script_path):
@@ -32,7 +39,12 @@ if __name__ == "__main__":
 
 def main():
     print('===== Checking several messages in one smtp session. =====')
+    print('DATA')
     in_one_session()
+    print('\nBDAT inbound\n')
+    several_messages_one_session(creds[24],creds[15],25,creds[23],cred_rec)
+    print('\nBDAT outbound\n')
+    several_messages_one_session(creds[25], creds[16], 25, creds[17], cred_rec2)
     print('\n===== Languages check. =====\n\n')
     langs()
     
