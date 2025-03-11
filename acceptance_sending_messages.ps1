@@ -1,4 +1,4 @@
-$creds = Get-Content -Path "C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv"
+$creds = Get-Content -Path "C:\Users\apriorit\Desktop\Acceptance\sensitive.csv"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[19])" -To "$($creds[17])" -Subject " "
 $receiverEmails1 = "$($creds[17])", "$($creds[18])"
 Write-Host "Inbound Message sent"

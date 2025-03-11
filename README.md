@@ -16,11 +16,11 @@ Install
 
 Perform actions
 ----------------
-- If download as archive > Unpack archive and place 'ForAcceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'ForAcceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
+- If download as archive > Unpack archive and place 'Acceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'Acceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
 
-- In all present '*.py' files find all the folder addresses like 'C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest...' and change this part of it 'C:\Users\apriorit\Desktop\ForAcceptance\' so it correcly point to the folder with the acceptance test files.
+- In all present '*.py' files find all the folder addresses like 'C:\Users\apriorit\Desktop\Acceptance\filesSendingTest...' and change this part of it 'C:\Users\apriorit\Desktop\Acceptance\' so it correcly point to the folder with the acceptance test files.
 
-- 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\ForAcceptance' so it points to the 'ForAcceptance' folder on the PC
+- 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\Acceptance' so it points to the 'ForAcceptance' folder on the PC
 
 - 'acceptance.bat' check that NPP_PATH="C:\Program Files\Notepad++\notepad++.exe" points to the folder with executable of notepad++
 
