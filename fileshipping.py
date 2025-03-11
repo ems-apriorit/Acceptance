@@ -3,8 +3,8 @@ import json
 from datetime import datetime, timedelta
 import re
 
-result2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance result fileshipper.txt'
-address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+result2 = r'C:\Users\apriorit\Desktop\Acceptance\acceptance result fileshipper.txt'
+address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
 
 
 def read_csv_to_list(file_path):

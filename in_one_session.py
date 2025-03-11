@@ -1,7 +1,7 @@
 import smtplib
 from email.message import EmailMessage
 from login import read_csv_to_list
-address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
 creds = read_csv_to_list(address)
 
 
@@ -25,6 +25,7 @@ def in_one_session():
         msg['Subject'] = subject
         msg['From'] = email2
         msg['To'] = email1
+        msg.set_content('Test body')
 
         print(f'{subject} - Inbound sent')
         smtp_connection1.send_message(msg)
@@ -43,6 +44,7 @@ def in_one_session():
         msg['Subject'] = subject
         msg['From'] = email1
         msg['To'] = email2
+        msg.set_content('Test body')
 
         print(f'{subject} - Outbound sent')
         smtp_connection2.send_message(msg)

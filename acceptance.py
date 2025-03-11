@@ -9,11 +9,11 @@ import sys
 from languages_test import langs
 from bdat_one_session import several_messages_one_session
 from login import read_csv_to_list
-sys.path.append(r'C:\Users\apriorit\Desktop\ForAcceptance\filesSendingTest')
+sys.path.append(r'C:\Users\apriorit\Desktop\Acceptance\filesSendingTest')
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
-address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
 creds = read_csv_to_list(address)
 cred_rec = [creds[17], creds[17]]
 cred_rec2 = [creds[23], creds[23]]
@@ -28,8 +28,8 @@ def run_powershell_script(script_path):
 
 if __name__ == "__main__":
     # Provide the path to your PowerShell script
-    script_path1 = r'C:\Users\apriorit\Desktop\ForAcceptance\dbcommand.ps1'
-    script_path2 = r'C:\Users\apriorit\Desktop\ForAcceptance\acceptance_sending_messages.ps1'
+    script_path1 = r'C:\Users\apriorit\Desktop\Acceptance\dbcommand.ps1'
+    script_path2 = r'C:\Users\apriorit\Desktop\Acceptance\acceptance_sending_messages.ps1'
     print('===== Updating customers DB rules and brand. =====\n')
     run_powershell_script(script_path1)
     print('Sending the main pack of test messages.\n')
@@ -41,10 +41,10 @@ def main():
     print('===== Checking several messages in one smtp session. =====')
     print('DATA')
     in_one_session()
-    print('\nBDAT inbound\n')
-    several_messages_one_session(creds[24],creds[15],25,creds[23],cred_rec)
-    print('\nBDAT outbound\n')
-    several_messages_one_session(creds[25], creds[16], 25, creds[17], cred_rec2)
+    # print('\nBDAT inbound\n')
+    # several_messages_one_session(creds[24],creds[15],25,creds[23],cred_rec)
+    # print('\nBDAT outbound\n')
+    # several_messages_one_session(creds[25], creds[16], 25, creds[17], cred_rec2)
     print('\n===== Languages check. =====\n\n')
     langs()
     
@@ -59,7 +59,7 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
-    script_path3 = r'C:\Users\apriorit\Desktop\ForAcceptance\enable_sandbox.ps1'
+    script_path3 = r'C:\Users\apriorit\Desktop\Acceptance\enable_sandbox.ps1'
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')

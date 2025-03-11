@@ -1,5 +1,5 @@
 # Replace these variables with your actual Azure SQL Database details
-$creds = Get-Content -Path "C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv"
+$creds = Get-Content -Path "C:\Users\apriorit\Desktop\Acceptance\sensitive.csv"
 $server = $creds[10]
 $database = $creds[11]
 $username = $creds[12]

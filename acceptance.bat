@@ -1,5 +1,5 @@
 @echo off
-cd C:\Users\apriorit\Desktop\ForAcceptance
+cd C:\Users\apriorit\Desktop\Acceptance
 python acceptance.py
 python fileshipping.py
 :: Path to Notepad++
