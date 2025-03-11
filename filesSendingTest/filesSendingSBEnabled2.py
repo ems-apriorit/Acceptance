@@ -10,12 +10,12 @@ from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from os.path import basename
 import platform
-address = r'C:\Users\apriorit\Desktop\ForAcceptance\sensitive.csv'
+address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
 
 # IN FOLDER_PATH VARIABLE USE ADDRESS ONLY WITH DOUBLE SLASH >>> \\
 # In other case erro will appear
 
-folder_path = 'C:\\Users\\apriorit\\Desktop\\ForAcceptance\\filesSendingTest\\Acceptance'    # <<<< Provide a full path of the folder with test files
+folder_path = 'C:\\Users\\apriorit\\Desktop\\Acceptance\\filesSendingTest\\Acceptance'    # <<<< Provide a full path of the folder with test files
 listOfFilesInFolder = os.listdir(folder_path)    # Creates and contains a list of files from the folder above
 
 
