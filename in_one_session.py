@@ -8,9 +8,9 @@ creds = read_csv_to_list(address)
 def in_one_session():
     j = 0
     email1 = f'{creds[17]}'
-    email2 = f'{creds[23]}'
-    inbound = f'{creds[15]}'
-    outbound = f'{creds[16]}'
+    email2 = f'{creds[22]}'
+    inbound = f'{creds[14]}'
+    outbound = f'{creds[15]}'
     port = 25
 
     messagecount = 3
