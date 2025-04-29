@@ -1,9 +1,9 @@
 # Replace these variables with your actual Azure SQL Database details
 $creds = Get-Content -Path "C:\Users\apriorit\Desktop\Acceptance\sensitive.csv"
-$server = $creds[10]
-$database = $creds[11]
-$username = $creds[12]
-$password = $creds[13]
+$server = $creds[9]
+$database = $creds[10]
+$username = $creds[11]
+$password = $creds[12]
 $enablerule = "update [Rule] set active = 1 where ruleid = 142323"
 
 # Connection string

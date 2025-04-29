@@ -48,7 +48,7 @@ def internal_user_token(token):
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': f'Bearer {token}',
-        'Cookie': f'ARRAffinity={creds[9]}'
+        'Cookie': f'ARRAffinity={creds[27]}'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload).text
@@ -67,7 +67,7 @@ def release_email(guid, token):
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}',
-        'Cookie': f'ARRAffinity={creds[9]}'
+        'Cookie': f'ARRAffinity={creds[27]}'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload).text
@@ -88,7 +88,7 @@ def release_many(ids, token):
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}',
-        'Cookie': f'ARRAffinity={creds[9]}'
+        'Cookie': f'ARRAffinity={creds[27]}'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload).text
@@ -107,7 +107,7 @@ def get_list_and_perform_release(token):
     headers1 = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}',
-        'Cookie': f'ARRAffinity={creds[9]}'
+        'Cookie': f'ARRAffinity={creds[27]}'
     }
 
     url2 = f"https://staging2securemail.azurewebsites.net/api/quarantine/emails/?quarantineId=12046&startDate={current_time2}&finishDate={current_time}&direction=Out&QuarantineStatus=InQuarantine"
@@ -116,7 +116,7 @@ def get_list_and_perform_release(token):
     headers2 = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {token}',
-        'Cookie': f'ARRAffinity={creds[9]}'
+        'Cookie': f'ARRAffinity={creds[27]}'
     }
     
     response_in = requests.request("GET", url1, headers=headers1, data=payload1).text

@@ -15,7 +15,7 @@ address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
 # IN FOLDER_PATH VARIABLE USE ADDRESS ONLY WITH DOUBLE SLASH >>> \\
 # In other case erro will appear
 
-folder_path = 'C:\\Users\\apriorit\\Desktop\\Acceptance\\filesSendingTest\\Acceptance'    # <<<< Provide a full path of the folder with test files
+folder_path = 'C:\\Users\\apriorit\\Desktop\\Acceptance\\filesSendingTest\\Acceptance\\'    # <<<< Provide a full path of the folder with test files
 listOfFilesInFolder = os.listdir(folder_path)    # Creates and contains a list of files from the folder above
 
 
@@ -33,9 +33,9 @@ def read_csv_to_list(file_path):
    
 creds = read_csv_to_list(address)
 # SMTP data for script
-host = f'{creds[15]}'
-sender = f'{creds[22]}'
-recipient = f'{creds[17]}'
+host = f'{creds[14]}'
+sender = f'{creds[21]}'
+recipient = f'{creds[16]}'
 body = 'test text'
 
    

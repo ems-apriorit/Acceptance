@@ -7,10 +7,10 @@ creds = read_csv_to_list(address)
 
 def langs():
     j = 0
-    email1 = f'{creds[17]}'
-    email2 = f'{creds[23]}'
-    inbound = f'{creds[15]}'
-    outbound = f'{creds[16]}'
+    email1 = f'{creds[16]}'
+    email2 = f'{creds[22]}'
+    inbound = f'{creds[14]}'
+    outbound = f'{creds[15]}'
     port = 25
     lang = ['greek','chinese','japanese','korean','indian','cyrillic','arabic','thai']
     lang_text = ['Αυτό είναι ένα δοκιμαστικό μήνυμα','这是一条测试消息','これはテストメッセージです','이것은 테스트 메시지입니다',' यह एक परीक्षण संदेशहै ','Це тестове повідомлення','هذه رسالة اختبار',' นี่เป็นข้อความทดสอบ ']
