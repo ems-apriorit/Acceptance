@@ -53,7 +53,7 @@ def login_get_report():
     print(f'access token received - {accesstoken}')
 
     # Requesting email report from api according to the time interval
-    conn = http.client.HTTPSConnection("api2.staging.clouduss.com")
+    conn = http.client.HTTPSConnection("apiv2.staging.clouduss.com")
     payload = json.dumps({
       "interval": "custom",
       "from": f'{time_from}',  # change to get data for a specific time frame
@@ -64,7 +64,7 @@ def login_get_report():
       "limit": 150
     })
     
-    # print(f'payload:\n{payload}')
+    #    print(f'payload:\n{payload}')
     
     headers = {
       'X-Uss-Account-Id': f'{creds[2]}',  # USS account ID   for the sssclient user
@@ -77,8 +77,8 @@ def login_get_report():
     res = conn.getresponse()
     
     data = res.read()  # email report received
-    print('email report received')
+    print('email report received\n\n')
     return data
 
 
-# print(login_get_report())
+#    print(login_get_report())
