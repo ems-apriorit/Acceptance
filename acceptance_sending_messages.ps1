@@ -24,11 +24,11 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "mail@yabadabaduoooo.com" -To
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Suspicious RTF Invoice" -BodyAsHtml "[stagein](Default) Suspicious RTF Invoice" -Attachments "attachment\acceptance_rtf.rtf"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Malware. Vade Secure Virus test" -BodyAsHtml "cJ7ig62u425nRaF2bXEJS919ZU6tlR-Virus-zkysi9P1COdW2lBJ58n057OtVU1j5Wgx7Q"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Malware. Vade Secure Virus test" -BodyAsHtml "cJ7ig62u425nRaF2bXEJS919ZU6tlR-Virus-zkysi9P1COdW2lBJ58n057OtVU1j5Wgx7Q"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Phishing. Vade Secure Phishing test" -BodyAsHtml "HAlqdeteLRT8jXYDYyLkKqACgwnrRo-Phishing-eNIhe9WdwDWTT09TGWAWIJuH9KvN2yHXsJ"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Phishing. Vade Secure Phishing test" -BodyAsHtml "HAlqdeteLRT8jXYDYyLkKqACgwnrRo-Phishing-eNIhe9WdwDWTT09TGWAWIJuH9KvN2yHXsJ"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Suspect. Vade Secure Suspect test" -BodyAsHtml "BJ83tgVMZgNx6LzvL2M817palv9fzh-Suspect-5t0T3Qk462BgI264tbcPX3648rLWRYINg9"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) CoreService Suspect. Vade Secure Suspect test" -BodyAsHtml "BJ83tgVMZgNx6LzvL2M817palv9fzh-Suspect-5t0T3Qk462BgI264tbcPX3648rLWRYINg9"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Password Protected Attachment zip" -BodyAsHtml "[stagein](Default) Password Protected Attachment zip" -Attachments "attachment\acceptance_password_ANSI.zip"
 Write-Host "Inbound Message sent"
@@ -52,7 +52,7 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) URL Redirect Spam" -BodyAsHtml "[stagein]migre.me/ "
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "test@sssclient.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Domain Name Detection" -BodyAsHtml "[stagein](Default) Domain Name Detection"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "lost@zeus.extexch.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Domain Name Detection" -BodyAsHtml "[stagein](Default) Domain Name Detection"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Possible Spam" -BodyAsHtml "[stagein]migre.me/ "
 Write-Host "Inbound Message sent"
@@ -62,7 +62,7 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Archive" -BodyAsHtml "[stagein]Archive"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "test@ququ.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Nearby" -BodyAsHtml "[stagein]Nearby"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "admin@zes.extexch.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Nearby" -BodyAsHtml "[stagein]Nearby"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "user@zoho.eu" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]SPF" -BodyAsHtml "SPF"
 Write-Host "Inbound Message sent"
@@ -72,54 +72,80 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "Edward Newgate <$($creds[22]
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "Edward Newgate <$($creds[22])>" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Executive Tracking Whitelist" -BodyAsHtml "[stagein]Executive Tracking"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Confirmed Phishing. Vade Secure Phishing test" -BodyAsHtml "HAlqdeteLRT8jXYDYyLkKqACgwnrRo-Phishing-eNIhe9WdwDWTT09TGWAWIJuH9KvN2yHXsJ"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Confirmed Phishing. Vade Secure Phishing test" -BodyAsHtml "HAlqdeteLRT8jXYDYyLkKqACgwnrRo-Phishing-eNIhe9WdwDWTT09TGWAWIJuH9KvN2yHXsJ"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]High Reputation Marketing. Vade Secure PCE test" -BodyAsHtml "q7jn9Fz78mVR8RJo07S8so4dq5XQ5Q-PCE-h2IOKyecOh2f5W428NzVM769YB1bnWxPj0"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]High Reputation Marketing. Vade Secure PCE test" -BodyAsHtml "q7jn9Fz78mVR8RJo07S8so4dq5XQ5Q-PCE-h2IOKyecOh2f5W428NzVM769YB1bnWxPj0"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Medium Reputation Marketing. Vade Secure MCE test" -BodyAsHtml "3eKPY1dCsmec85LatqwNQkoDa37Q42-MCE-DQaDFBp73950znTC105Q2LVO0m69s1wH3p"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Medium Reputation Marketing. Vade Secure MCE test" -BodyAsHtml "3eKPY1dCsmec85LatqwNQkoDa37Q42-MCE-DQaDFBp73950znTC105Q2LVO0m69s1wH3p"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Low Reputation Marketing. Vade Secure DCE test" -BodyAsHtml "AJ16M96ZqpNn9fht4k2215NvhWz02B-DCE-2B6hvNbbBgICOKRr2xPoZj71F9f5M70Cu7"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[20])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Low Reputation Marketing. Vade Secure DCE test" -BodyAsHtml "AJ16M96ZqpNn9fht4k2215NvhWz02B-DCE-2B6hvNbbBgICOKRr2xPoZj71F9f5M70Cu7"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "ems.testuser@gmail.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - CAC msgBody blacklist" -BodyAsHtml "online låneudbyder
-memory booster
-3B Boligrenovering
-udglatter huden
-udligner rynker
-rejuve
-mecindo
-online apotek
-HelseTips &amp; Tracks
-søger en bolleven
-GraspSkills
-Facebook Funds Manager
-PMI-PBA Certification
-Technocerts
-uforpligtende dating
-Udglatte huden
-HusCompagniet
-Smartlånet
-Casual Lounge
-potensmiddel
-naturlig gel.
-Partnermedniveau.dk
-Hvis du ønsker at beholde din konto eller betale din saldo, bedes du bekræfte din konto via denne email
-LeoVegas
-Unibet
-Akutbolig.dk
-Spilnu.dk
-boligportalen
-Enroll now...
-Gratis spil
-anmodning forretning
-disponible saldo? Kan vi betale
-erekt!on
-udbetalning
-kan lærer dog bedre
-Bit-Danmark"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "ems.testuser@gmail.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - CAC msgBody blacklist" -BodyAsHtml "Kindly act as directed to enable us commence delivery
+you are required to cancel system deactivation required  now.
+cryptocurrencies
+bitcoin
+bitcoins
+kryptovaluta
+KRYPTOHANDEL
+Hvad er vores bankkonto saldo i dag
+modtage deres drømmelån
+Hver uge er der nye retter i kasserne
+værdikupon på gratis blæk
+Tusindvis af film
+Du er udvalgt
+erektion
+sundhedsordning med Falck
+lånetjeneste
+Dancover
+synlige rynker
+låneansøgning
+overraskelse fra os:
+bestille et interview
+ikke har været i brug i en længere periode.
+parkeringer og få GRATIS Vejhjælp
+500 kr i bonus
+Six Sigma
+velkomstbonus!
+Casino
+santander
+100% anonym
+familie sikker
+fugttjek
+slagtilbud
+flyttemand
+lykkehjul
+ensomme nætter
+flirt
+Få svar inden en time
+markedsforskningsinstitut"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "ems.testuser@gmail.com" -To "$($creds[17])" -Subject "[Acceptance][Inbound]Customers - Greymail recipients Avsluta nyhetsbrevet nu!" -BodyAsHtml "[stagein] Greymail recipients Avsluta nyhetsbrevet nu!"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "ems.testuser@gmail.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - Greymail recipients Avsluta nyhetsbrevet nu!" -BodyAsHtml "[stagein] Greymail recipients Avsluta nyhetsbrevet nu!"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - Allow KK mail list" -BodyAsHtml "moveto@kalundborg.dk www.sundhedsoplysning.dk DenOffentlige Schiller Instituttet BeredskabsInfo arbejdsmiljoweb.dk kontakt@kulturtjenesten.dk EduLab ADHD-foreningen Dafolo dp@dp.dk www.danskevv.dk Økonomidirektørforeningen hej@cyklingudenalder.dk info@biometric.dk www.seminarer.dk mge@oim.dk ungdomsringen@ungdomsringen.dk nfo@esmiley.dk skolelederne@skolelederne.org forlag@dafolo.dk KOMBITs projekter www.vsbv.dk brandvæsen vestsjællands migre.me/"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - Allow KK mail list" -BodyAsHtml "moveto@kalundborg.dk
+www.sundhedsoplysning.dk
+DenOffentlige
+Schiller Instituttet
+BeredskabsInfo
+arbejdsmiljoweb.dk
+kontakt@kulturtjenesten.dk
+EduLab
+ADHD-foreningen
+Dafolo
+dp@dp.dk
+www.danskevv.dk
+Økonomidirektørforeningen
+hej@cyklingudenalder.dk
+info@biometric.dk
+www.seminarer.dk
+mge@oim.dk
+ungdomsringen@ungdomsringen.dk
+nfo@esmiley.dk
+skolelederne@skolelederne.org
+forlag@dafolo.dk
+KOMBITs projekter
+www.vsbv.dk
+brandvæsen
+vestsjællands"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "ems.testuser@gmail.com" -To "$($creds[16])" -Subject "[Acceptance][Inbound]Customers - NewsLetters" -BodyAsHtml "Click here if you are unable to view this email"
 Write-Host "Inbound Message sent"
@@ -178,42 +204,44 @@ Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "admin@em
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds[22])" -Subject "[Acceptance][outbound][Custom]Notification to sender" -BodyAsHtml "Notification"
 Write-Host "Outbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - CAC msgBody blacklist" -BodyAsHtml "online låneudbyder
-memory booster
-3B Boligrenovering
-udglatter huden
-udligner rynker
-rejuve
-mecindo
-online apotek
-HelseTips &amp; Tracks
-søger en bolleven
-GraspSkills
-Facebook Funds Manager
-PMI-PBA Certification
-Technocerts
-uforpligtende dating
-Udglatte huden
-HusCompagniet
-Smartlånet
-Casual Lounge
-potensmiddel
-naturlig gel.
-Partnermedniveau.dk
-Hvis du ønsker at beholde din konto eller betale din saldo, bedes du bekræfte din konto via denne email
-LeoVegas
-Unibet
-Akutbolig.dk
-Spilnu.dk
-boligportalen
-Enroll now...
-Gratis spil
-anmodning forretning
-disponible saldo? Kan vi betale
-erekt!on
-udbetalning
-kan lærer dog bedre
-Bit-Danmark"
+Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - CAC msgBody blacklist" -BodyAsHtml "Kindly act as directed to enable us commence delivery
+you are required to cancel system deactivation required  now.
+cryptocurrencies
+bitcoin
+bitcoins
+kryptovaluta
+KRYPTOHANDEL
+Hvad er vores bankkonto saldo i dag
+modtage deres drømmelån
+Hver uge er der nye retter i kasserne
+værdikupon på gratis blæk
+Tusindvis af film
+Du er udvalgt
+erektion
+sundhedsordning med Falck
+lånetjeneste
+Dancover
+synlige rynker
+låneansøgning
+overraskelse fra os:
+bestille et interview
+ikke har været i brug i en længere periode.
+parkeringer og få GRATIS Vejhjælp
+500 kr i bonus
+Six Sigma
+velkomstbonus!
+Casino
+santander
+100% anonym
+familie sikker
+fugttjek
+slagtilbud
+flyttemand
+lykkehjul
+ensomme nætter
+flirt
+Få svar inden en time
+markedsforskningsinstitut"
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "smiletest@yahoo.com" -Subject "[Acceptance][outbound]Customers - Lotus Confidential C2 yahoo" -BodyAsHtml "[stageout] Lotus Confidential C2 yahoo"
 Write-Host "Outbound Message sent"
@@ -221,7 +249,7 @@ Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "sub@sssclient.com" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Credit Card With Spaces Block" -BodyAsHtml "6161-6724-5685-2342"
 Write-Host "Outbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[18])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Allow outbound" -BodyAsHtml "[stageout] Allow outbound"
+Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[17])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Allow outbound" -BodyAsHtml "[stageout] Allow outbound"
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "mnm@dsfgdf.com" -Subject "[Acceptance][outbound]Customers - Safe sender" -BodyAsHtml "Safe sender"
 Write-Host "Outbound Message sent"

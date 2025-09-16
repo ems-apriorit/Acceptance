@@ -7,16 +7,11 @@ $password = $creds[12]
 $link = $creds[13]
 $d_link = $creds[25]
 $s_link = $creds[26]
-$rules1 = "update [Rule] set active = 0 where customerid = 11523"
-$rules2 = "update [Rule] set active = 1 where ruleid in (115553, 114457, 114460, 766923, 256624, 488959, 722678, 800265, 919635, 
-988320, 1485546, 3276144, 114461, 114462, 114464, 114465, 114466, 114467, 114469, 114470, 
-114471, 114472, 114476, 114477, 114478, 114479, 114483, 114704, 114705, 114706, 115497, 
-115547, 115550, 116480, 116554, 117548, 117644, 118743, 120177, 120178, 120179, 120180, 
-120183, 120194, 120195, 120197, 120199, 120201, 120202, 120203, 120205, 120208, 120210, 
-120211, 120214, 120257, 120375, 121037, 121086, 123061, 3314701)"
-$brand = "update brand set url = '$link' where brandid = 1000"
-$dashboard = "update SecureMailOptions set InternalPortalDomain = '$d_link' where customerid = 11523"
-$securemail = "update SecureMailOptions set ExternalPortalDomain = '$s_link' where customerid = 11523"
+$rules1 = "update [Rule] set active = 0 where customerid = 23490"
+$rules2 = "update [Rule] set active = 1 where ruleid in (722654,722641,3274656,722652,722651,722665,722640,722639,722667,722647,3947336,722664,722642,3947337,3947338,3947339,722674,722635,772918,722653,919694,722673,722638,3473214,727651,3947340,722644,722663,722650,722643,722657,722649,3947352,3947353,3947341,3947348,3947347,3947342,3947345,3947344,3947343,3947349,3947346,3947351,3947350,722660,722659,722658,2580030,722645,722675,722646,722666)"
+$brand = "update brand set url = '$link' where brandid = 54645"
+$dashboard = "update SecureMailOptions set InternalPortalDomain = '$d_link' where customerid = 23490"
+$securemail = "update SecureMailOptions set ExternalPortalDomain = '$s_link' where customerid = 23490"
 
 # Connection string
 $connectionString = "Server=$server;Database=$database;User Id=$username;Password=$password;Encrypt=True;"
