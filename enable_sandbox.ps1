@@ -4,7 +4,7 @@ $server = $creds[9]
 $database = $creds[10]
 $username = $creds[11]
 $password = $creds[12]
-$enablerule = "update [Rule] set active = 1 where ruleid = 142323"
+$enablerule = "update [Rule] set active = 1 where ruleid = 722670"
 
 # Connection string
 $connectionString = "Server=$server;Database=$database;User Id=$username;Password=$password;Encrypt=True;"
