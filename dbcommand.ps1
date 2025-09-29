@@ -13,7 +13,7 @@ $rules2 = "update [Rule] set active = 1 where ruleid in (115553, 114457, 114460,
 114471, 114472, 114476, 114477, 114478, 114479, 114483, 114704, 114705, 114706, 115497, 
 115547, 115550, 116480, 116554, 117548, 117644, 118743, 120177, 120178, 120179, 120180, 
 120183, 120194, 120195, 120197, 120199, 120201, 120202, 120203, 120205, 120208, 120210, 
-120211, 120214, 120257, 120375, 121037, 121086, 123061, 3314701)"
+120211, 120214, 120257, 120375, 121086, 123061, 3314701)"
 $brand = "update brand set url = '$link' where brandid = 1000"
 $dashboard = "update SecureMailOptions set InternalPortalDomain = '$d_link' where customerid = 11523"
 $securemail = "update SecureMailOptions set ExternalPortalDomain = '$s_link' where customerid = 11523"
