@@ -34,7 +34,7 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Password Protected Attachment pdf" -BodyAsHtml "[stagein](Default) Password Protected Attachment pdf" -Attachments "attachment\acceptance_password_ANSI.pdf"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Virus Heuristic Analysis" -BodyAsHtml "Macros inside" -Attachments "attachment\acceptance_macro.xls"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[21])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Virus Heuristic Analysis" -BodyAsHtml "Macros inside" -Attachments "attachment\acceptance_macro.xls"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Sexually Explicit" -BodyAsHtml "[stagein]hottest girls. pleasure source. some nasty girl"
 Write-Host "Inbound Message sent"
