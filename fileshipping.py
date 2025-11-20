@@ -44,7 +44,7 @@ def get_ad_token():
 def internal_user_token(token):
     url = "https://staging2securemailidentityserver.azurewebsites.net/connect/token"
 
-    payload = 'grant_type=internal_user&mailbox_id=10638298&client_id=frontend_ref_token&region=Staging'
+    payload = f'grant_type=internal_user&mailbox_id={creds[8]}&client_id=frontend_ref_token&region=Staging'
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': f'Bearer {token}',
