@@ -221,7 +221,7 @@ Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "sub@sssclient.com" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Credit Card With Spaces Block" -BodyAsHtml "6161-6724-5685-2342"
 Write-Host "Outbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[18])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Allow outbound" -BodyAsHtml "[stageout] Allow outbound"
+Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[17])" -To "$($creds[22])" -Subject "[Acceptance][outbound]Customers - Allow outbound" -BodyAsHtml "[stageout] Allow outbound"
 Write-Host "Outbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "mnm@dsfgdf.com" -Subject "[Acceptance][outbound]Customers - Safe sender" -BodyAsHtml "Safe sender"
 Write-Host "Outbound Message sent"
