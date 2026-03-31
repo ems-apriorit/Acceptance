@@ -48,7 +48,7 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Blog Spam" -BodyAsHtml "[stagein](Default) Blog Spam rule blog.yahoo"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) URL Scanner" -BodyAsHtml "[stagein](Default) URL Scanner http://dbltest.com"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) URL Scanner" -BodyAsHtml "[stagein](Default) URL Scanner http://dbltest.test"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) URL Redirect Spam" -BodyAsHtml "[stagein]migre.me/ "
 Write-Host "Inbound Message sent"
