@@ -61,7 +61,7 @@ def login_get_report():
       "tzoffset": -60,
       "page": 1,
       "start": 0,
-      "limit": 150
+      "limit": 2000
     })
     
     #    print(f'payload:\n{payload}')
@@ -82,3 +82,6 @@ def login_get_report():
 
 
 #    print(login_get_report())
+
+#with open("output.txt", "a") as f:
+#    print(login_get_report(), file=f)
