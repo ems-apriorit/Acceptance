@@ -1,4 +1,6 @@
 sensitive.csv
+sensitive_sssclient.csv
+sensitive_zeus.csv
 acceptance2.py
 acceptance_backup.py
 acceptance result.txt
