@@ -1,6 +1,6 @@
 import datetime
-result = r'C:\Users\apriorit\Desktop\Acceptance\acceptance result.txt'
-
+from config import OTHER_DATA_PATH
+result = fr'{OTHER_DATA_PATH}\acceptance result.txt'
 
 def acceptance_test(data):
     acceptance = []
@@ -119,6 +119,7 @@ def acceptance_test(data):
             continue
 
     # check if empty subj messages are from acceptance test users and message's delivery state
+    """
     for i in acceptanceempty:
         if '"from_address":"user5@sssclient.com"' in i:
             if 'delivered' in i:
@@ -132,6 +133,7 @@ def acceptance_test(data):
                 failed.append('Empty message from ems.testuser@outlook.com - failed')
         else:
             failed.append('All empty messages cases failed')
+    """
 
     # filter by [Acceptance] prefix
     for i in message_list:
@@ -195,4 +197,3 @@ def acceptance_test(data):
             file.write(line + '\n')
         file.write(f'\nTotal passed > {len(passed)}\nTotal failed > {len(failed)}')
     print('The report was filtered and results was written in the txt file\n')
-

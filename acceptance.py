@@ -1,5 +1,7 @@
 #!/usr/bin/env python3.6
 
+from config import SENSITIVE_DATA_PATH
+from config import OTHER_DATA_PATH
 import time
 from login import login_get_report
 from filterOutput import acceptance_test
@@ -9,11 +11,11 @@ import sys
 from languages_test import langs
 from bdat_one_session import several_messages_one_session
 from login import read_csv_to_list
-sys.path.append(r'C:\Users\apriorit\Desktop\Acceptance\filesSendingTest')
+sys.path.append(fr'{OTHER_DATA_PATH}\filesSendingTest')
 from filesSendingTest.filesSendingSBDisabled2 import send_sbd
 from filesSendingTest.filesSendingSBEnabled2 import send_ebd
 
-address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
+address = SENSITIVE_DATA_PATH
 creds = read_csv_to_list(address)
 cred_rec = [creds[16], creds[17]]
 cred_rec2 = [creds[21], creds[22]]
@@ -28,8 +30,8 @@ def run_powershell_script(script_path):
 
 if __name__ == "__main__":
     # Provide the path to your PowerShell script
-    script_path1 = r'C:\Users\apriorit\Desktop\Acceptance\dbcommand.ps1'
-    script_path2 = r'C:\Users\apriorit\Desktop\Acceptance\acceptance_sending_messages.ps1'
+    script_path1 = fr'{OTHER_DATA_PATH}\dbcommand.ps1'
+    script_path2 = fr'{OTHER_DATA_PATH}\acceptance_sending_messages.ps1'
     print('===== Updating customers DB rules and brand. =====\n')
     run_powershell_script(script_path1)
     print('Sending the main pack of test messages.\n')
@@ -59,7 +61,7 @@ def main():
     print('\n===== Main test completed =====\n')
     print('Sending files with Sandbox disabled')
     send_sbd()    # send a list of files with sandbox disabled 
-    script_path3 = r'C:\Users\apriorit\Desktop\Acceptance\enable_sandbox.ps1'
+    script_path3 = fr'{OTHER_DATA_PATH}\enable_sandbox.ps1'
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')
@@ -67,7 +69,6 @@ def main():
     print('\n')
     send_ebd()    # send a list of files with sandbox enabled 
     print('\n\nFinished')
-
 
 if __name__ == '__main__':
     main()

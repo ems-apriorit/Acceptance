@@ -7,3 +7,4 @@ acceptance result fileshipper.txt
 /filesSendingTest/__pycache__/
 /filesSendingTest/filesSendingSBDisabled.py
 /filesSendingTest/filesSendingSBEnabled.py
+config.py

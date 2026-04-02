@@ -1,7 +1,8 @@
 import smtplib
 from email.message import EmailMessage
 from login import read_csv_to_list
-address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
+from config import SENSITIVE_DATA_PATH
+address = SENSITIVE_DATA_PATH
 creds = read_csv_to_list(address)
 
 

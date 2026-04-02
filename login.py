@@ -1,11 +1,18 @@
 import http.client
 import json
 import datetime
-address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
+from config import SENSITIVE_DATA_PATH
+address = SENSITIVE_DATA_PATH
 
 
 def get_system_time_minus_few_minutes():
-    five_minutes_ago = datetime.datetime.now() - datetime.timedelta(minutes=10)
+    five_minutes_ago = datetime.datetime.now() - datetime.timedelta(minutes=190)
+    print(f'{five_minutes_ago}\n')
+    return five_minutes_ago.strftime("%Y-%m-%d %H:%M:%S")
+
+def get_system_time_minus_few2_minutes():
+    five_minutes_ago = datetime.datetime.now() - datetime.timedelta(minutes=180)
+    print(f'{five_minutes_ago}\n')
     return five_minutes_ago.strftime("%Y-%m-%d %H:%M:%S")
     
     
@@ -23,8 +30,10 @@ def read_csv_to_list(file_path):
 
 def login_get_report():
     creds = read_csv_to_list(address)
-    time_to = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    time_to = get_system_time_minus_few2_minutes()    #atetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     time_from = get_system_time_minus_few_minutes()
+    print(time_from)
+    print(time_to)
     print(f'\nTime for logs filtering was calculated\n')    # logging time
     
     # Connecting to the api and using credentials to login
@@ -53,23 +62,21 @@ def login_get_report():
     print(f'access token received - {accesstoken}')
 
     # Requesting email report from api according to the time interval
-    conn = http.client.HTTPSConnection("api2.staging.clouduss.com")
+    conn = http.client.HTTPSConnection("apiv2.staging.clouduss.com")
     payload = json.dumps({
       "interval": "custom",
       "from": f'{time_from}',  # change to get data for a specific time frame
       "to": f'{time_to}',  # change to get data for a specific time frame
-      "tzoffset": -60,
+      "tzoffset": 0,
       "page": 1,
       "start": 0,
-      "limit": 150
+      "limit": 2000
     })
-    
-    # print(f'payload:\n{payload}')
     
     headers = {
       'X-Uss-Account-Id': f'{creds[2]}',  # USS account ID   for the sssclient user
       'Content-Type': 'application/json',
-      f'Authorization': f'Bearer {accesstoken}'  # the token received in the   beginning is in use here
+      'Authorization': f'Bearer {accesstoken}'  # the token received in the   beginning is in use here
     }
     
     
@@ -81,4 +88,4 @@ def login_get_report():
     return data
 
 
-# print(login_get_report())
+#   print(login_get_report())
