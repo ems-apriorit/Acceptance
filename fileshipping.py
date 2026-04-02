@@ -2,9 +2,10 @@ import requests
 import json
 from datetime import datetime, timedelta
 import re
+from config import OTHER_DATA_PATH
 
-result2 = r'C:\Users\apriorit\Desktop\Acceptance\acceptance result fileshipper.txt'
-address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
+result2 = fr'{OTHER_DATA_PATH}\acceptance result fileshipper.txt'
+address = fr'{OTHER_DATA_PATH}\sensitive.csv'
 
 
 def read_csv_to_list(file_path):
