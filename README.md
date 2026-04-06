@@ -22,18 +22,18 @@ If want to clone from git > Create 'Acceptance' folder in any suitable location 
 - Download 'sensitive.csv' from the project's Confluence and place the file in the 'Acceptance' folder
 
 - Create a config.py file in the 'Acceptance' folder, add the next code inside and save:
--------------------------------------------------------------------------------------
+#####################################################################################
 import os
 
 SENSITIVE_DATA_PATH = r'<put here adddress of the acceptance folder>\sensitive.csv'
 OTHER_DATA_PATH = r'<put here adddress of the acceptance folder>'
--------------------------------------------------------------------------------------
+#####################################################################################
 
 
 - In all present '*.ps1' files (there are only 3 of them) in the root 'Acceptance' folder find $creds variable and add address that points to the file sensitive.csv
--------------------------------------------------------------------------------------
+#####################################################################################
 $creds = Get-Content -Path "C:\Users\apriorit\Desktop\Acceptance\sensitive.csv"
--------------------------------------------------------------------------------------
+#####################################################################################
 
 - 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\Acceptance' so it points to the 'Acceptance' folder on your PC
 
