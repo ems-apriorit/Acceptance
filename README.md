@@ -16,17 +16,32 @@ Install
 
 Perform actions
 ----------------
-- If download as archive > Unpack archive and place 'Acceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; If want to clone > Create 'Acceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
+- If download as archive > Unpack archive and place 'Acceptance' folder on Desktop or any suitable place where it won't be moved or deleted from; 
+If want to clone from git > Create 'Acceptance' folder in any suitable location on PC, 'git init' in the folder, clone the code
 
-- In all present '*.py' files find all the folder addresses like 'C:\Users\apriorit\Desktop\Acceptance\filesSendingTest...' and change this part of it 'C:\Users\apriorit\Desktop\Acceptance\' so it correcly point to the folder with the acceptance test files.
+- Download 'sensitive.csv' from the project's Confluence and place the file in the 'Acceptance' folder
 
-- 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\Acceptance' so it points to the 'ForAcceptance' folder on the PC
+- Create a config.py file in the 'Acceptance' folder, add the next code inside and save:
+-------------------------------------------------------------------------------------
+import os
+
+SENSITIVE_DATA_PATH = r'<put here adddress of the acceptance folder>\sensitive.csv'
+OTHER_DATA_PATH = r'<put here adddress of the acceptance folder>'
+-------------------------------------------------------------------------------------
+
+
+- In all present '*.ps1' files (there are only 3 of them) in the root 'Acceptance' folder find $creds variable and add address that points to the file sensitive.csv
+-------------------------------------------------------------------------------------
+$creds = Get-Content -Path "C:\Users\apriorit\Desktop\Acceptance\sensitive.csv"
+-------------------------------------------------------------------------------------
+
+- 'acceptance.bat' as above, edit 'cd C:\Users\apriorit\Desktop\Acceptance' so it points to the 'Acceptance' folder on your PC
 
 - 'acceptance.bat' check that NPP_PATH="C:\Program Files\Notepad++\notepad++.exe" points to the folder with executable of notepad++
 
-- Connect to customer's Tailscale network (if don't then report can't be received)
+- !Not necessary! Copy 'acceptance.bat' to a place where you are comfortable to run the test 
 
-- Download 'sensitive.csv' from the project's Confluence and place the file in the 'ForAcceptance' folder
+- Connect to customer's Tailscale network (if don't then report can't be received)
 
 
 Now you can run the test
@@ -41,4 +56,3 @@ Now you can run the test
 
 --------------------------------------------------------------------------------
 NOTE: cmd might automatically close itself if user closed notepad++ application. 
-      So, please make sure to save GUIDs if you plan to use them in the future.
