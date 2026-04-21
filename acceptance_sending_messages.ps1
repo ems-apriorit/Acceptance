@@ -129,6 +129,8 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "mnm@dsfgdf.com" -To "$($cred
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[16])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]Spoof" -BodyAsHtml "[stagein]Spoof"
 Write-Host "Inbound Message sent"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound][Custom]QR code test" -BodyAsHtml "[stagein]qr" -Attachments "attachment\malicious.png"
+Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[15])" -From "$($creds[16])" -To "$($creds[22])" -Subject " "
 $receiverEmails2 = "$($creds[21])", "$($creds[22])"
 Write-Host "Outbound Message sent"

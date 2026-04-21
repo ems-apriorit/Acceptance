@@ -47,10 +47,12 @@ def acceptance_test(data):
            '[Custom]High Reputation Marketing. Vade Secure PCE test': "[Marketing High]",
            '[Custom]Medium Reputation Marketing. Vade Secure MCE test': "Score is 105",
            '[Custom]Low Reputation Marketing. Vade Secure DCE test': "Score is 214",
+           '[Custom]QR code test': '"subject":"[spf] [QR] [Acceptance][Inbound][Custom]QR code test"',
            'Customers - CAC msgBody blacklist': '"final_rule_name":"Customers - CAC msgBody blacklist',
            'Customers - Greymail recipients Avsluta nyhetsbrevet nu!': "Score is 104",
            'Customers - Allow KK mail list"': 'delivered',
            'Customers - NewsLetters': '"final_rule_name":"Customers - NewsLetters'}
+
     outm = {'[Acceptance][outbound][Basic]SeveralRecipients in TO': '"delivery_state":"delivered"',
             '[Acceptance][outbound][Basic]ZIP': '"delivery_state":"delivered"',
             '[Acceptance][outbound][Basic]DOCX': '"delivery_state":"delivered"',
