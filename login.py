@@ -91,8 +91,8 @@ def login_get_report():
     return data
 
 
-#    print(login_get_report())
+print(login_get_report())
 
-#with open("output.txt", "a") as f:
-#    print(login_get_report(), file=f)
+with open("output.txt", "a") as f:
+    print(login_get_report(), file=f)
 
