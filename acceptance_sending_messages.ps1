@@ -40,7 +40,7 @@ Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Sexual Enhancer/Explicit Spam" -BodyAsHtml "[stagein]Viagr4"
 Write-Host "Inbound Message sent"
-Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) BitDefender AV" -BodyAsHtml "[stagein](Default) Core Anti-Malware" -Attachments "attachment\eicar.txt"
+Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) Core Anti-Malware" -BodyAsHtml "[stagein](Default) Core Anti-Malware" -Attachments "attachment\eicar.txt"
 Write-Host "Inbound Message sent"
 Send-MailMessage -SmtpServer "$($creds[14])" -From "$($creds[22])" -To "$($creds[16])" -Subject "[Acceptance][Inbound](Default) BitDefender AV Cloud mode" -BodyAsHtml "[stagein](Default) BitDefender AV Cloud mode" -Attachments "attachment\acceptance_dummyscan_excepted.txt"
 Write-Host "Inbound Message sent"
