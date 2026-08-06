@@ -12,3 +12,4 @@ acceptance result fileshipper.txt
 sensitive_sssclient.csv
 sensitive_zeus.csv
 config.py
+output.txt
