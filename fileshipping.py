@@ -98,9 +98,14 @@ def release_many(ids, token):
 
 
 def get_list_and_perform_release(token):
-    
-    current_time = (datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
-    current_time2 = (datetime.now() - timedelta(minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
+
+    # Testing parameters (comment after testing and push to prod
+    current_time = (datetime.now() - timedelta(hours=3)).strftime("%Y-%m-%d %H:%M:%S")
+    current_time2 = (datetime.now() - timedelta(hours=3, minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
+
+    # Prod parameters
+    # current_time = (datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    # current_time2 = (datetime.now() - timedelta(minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
 
     url1 = f"https://staging2securemail.azurewebsites.net/api/quarantine/emails/?quarantineId=12046&startDate={current_time2}&finishDate={current_time}&direction=In&QuarantineStatus=InQuarantine"
     
@@ -122,8 +127,10 @@ def get_list_and_perform_release(token):
     
     response_in = requests.request("GET", url1, headers=headers1, data=payload1).text
     print('Received inbound quarantine messages list')
+    # print(response_in)
     response_out = requests.request("GET", url2, headers=headers2, data=payload2).text
     print('Received outbound quarantine messages list')
+    # print(response_out)
     
     guid_pattern = re.compile(r'[a-f0-9\-]{36}', re.IGNORECASE)  # Adjust if GUIDs differ
     subject_pattern = re.compile(r'"Subject":"(.*?)"',re.IGNORECASE)  # Matches "Subject:" followed by text until next GUID or end
@@ -167,5 +174,6 @@ def get_list_and_perform_release(token):
     print('results were written to the file')
 
 
-creds = read_csv_to_list(address)
-get_list_and_perform_release(internal_user_token(get_ad_token()))
+if __name__ == '__main__':
+    creds = read_csv_to_list(address)
+    get_list_and_perform_release(internal_user_token(get_ad_token()))

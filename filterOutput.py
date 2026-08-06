@@ -37,7 +37,7 @@ def acceptance_test(data):
            '(Default) Domain Name Detection': "Score is 145",
            '[Custom]Possible Spam': '"Possible Spam"',
            '[Custom]Confirmed Spam': '"Confirmed Spam"',
-           '[Custom]Virus': '"Virus Test"',
+           '[Custom]Virus': '"Score is 327"',
            '[Custom]Nearby': '"Nearby Domain Test"',
            '[Custom]SPF': '"subject":"[spf]',
            '[Custom]Spoof': '"final_rule_name":"Spoof Rule"',

@@ -1,11 +1,14 @@
 @echo off
 cd C:\Users\apriorit\Desktop\Acceptance
+
+:: Run the test
 python acceptance.py
 python fileshipping.py
-:: Path to Notepad++
+
+:: Set Path to Notepad++
 set NPP_PATH="C:\Program Files\Notepad++\notepad++.exe"
 
-:: File paths
+:: Set Files' paths
 set FILE1="acceptance result.txt"
 set FILE2="acceptance result fileshipper.txt"
 

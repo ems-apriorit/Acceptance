@@ -7,6 +7,7 @@ address = SENSITIVE_DATA_PATH
 
 def get_system_time_minus_few_minutes():
     five_minutes_ago = datetime.datetime.now() - datetime.timedelta(minutes=10)
+    # five_minutes_ago = datetime.datetime.now() - datetime.timedelta(hours=3, minutes=10) line for local test use
     #    print(f'{five_minutes_ago}\n')
     return five_minutes_ago.strftime("%Y-%m-%d %H:%M:%S")
 
@@ -31,10 +32,17 @@ def read_csv_to_list(file_path):
 
 def login_get_report():
     creds = read_csv_to_list(address)
-    time_to = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")    #atetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    time_to = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     time_from = get_system_time_minus_few_minutes()
-    #    print(time_from)
-    #    print(time_to)
+
+    # block for local testing only
+    """
+    time = datetime.datetime.now() - datetime.timedelta(hours=3)    #datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    time_to = time.strftime("%Y-%m-%d %H:%M:%S")
+    time_from = get_system_time_minus_few_minutes()
+    print(time_from)
+    print(time_to)
+    """
     print(f'\nTime for logs filtering was calculated\n')    # logging time
     
     # Connecting to the api and using credentials to login
@@ -87,12 +95,12 @@ def login_get_report():
     res = conn.getresponse()
     
     data = res.read()  # email report received
-    print('email report received\n\n')
+    print('===== Email report received =====\n\n')
+    # print(data)
     return data
 
 
-print(login_get_report())
-
-with open("output.txt", "a") as f:
-    print(login_get_report(), file=f)
-
+# print(login_get_report())
+if __name__ == '__main__':
+    with open("output.txt", "w") as f:
+        print(login_get_report(), file=f)

@@ -10,12 +10,14 @@ from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from os.path import basename
 import platform
-address = r'C:\Users\apriorit\Desktop\Acceptance\sensitive.csv'
+from config import SENSITIVE_DATA_PATH
+from config import FILE_SEND_PATH
+address = SENSITIVE_DATA_PATH
 
 # IN FOLDER_PATH VARIABLE USE ADDRESS ONLY WITH DOUBLE SLASH >>> \\
-# In other case erro will appear
+# In other case error will appear
 
-folder_path = 'C:\\Users\\apriorit\\Desktop\\Acceptance\\filesSendingTest\\Acceptance\\'    # <<<< Provide a full path of the folder with test files
+folder_path = FILE_SEND_PATH    # <<<< Provide a full path of the folder with test files
 listOfFilesInFolder = os.listdir(folder_path)    # Creates and contains a list of files from the folder above
 
 

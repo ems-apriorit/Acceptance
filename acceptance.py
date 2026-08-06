@@ -28,7 +28,8 @@ def run_powershell_script(script_path):
     except subprocess.CalledProcessError as e:
         print(f"Error: {e}")
 
-if __name__ == "__main__":
+
+def main():
     # Provide the path to your PowerShell script
     script_path1 = fr'{OTHER_DATA_PATH}\dbcommand.ps1'
     script_path2 = fr'{OTHER_DATA_PATH}\acceptance_sending_messages.ps1'
@@ -37,9 +38,6 @@ if __name__ == "__main__":
     print('Sending the main pack of test messages.\n')
     run_powershell_script(script_path2)
     print('===== Main messages\' pack was sent. =====\n\n')
-
-
-def main():
     print('===== Checking several messages in one smtp session. =====')
     print('DATA')
     in_one_session()
@@ -47,28 +45,29 @@ def main():
     # several_messages_one_session(creds[23],creds[14],25,creds[22],cred_rec)
     # print('\nBDAT outbound\n')
     # several_messages_one_session(creds[24], creds[16], 25, creds[16], cred_rec2)
-    print('\n===== Languages check. =====\n\n')
-    langs()
-    
     print('\n\n===== Waiting a few min until UI/DB updated with new logs: =====\n\n')
     for i in range(5):
         remaining_time = 5 - i
         print(f"{remaining_time} minute(s) remaining...")
         time.sleep(60)  # 60 seconds = 1 minute
-
+    print('\n\n===== Getting the main cases result =====\n\n')
     get_email_report = login_get_report()    # login and getting report
     acceptance_test(get_email_report)    # filter report data and write results in file
     print('\n===== Main test completed =====\n')
-    print('Sending files with Sandbox disabled')
-    send_sbd()    # send a list of files with sandbox disabled 
-    script_path3 = fr'{OTHER_DATA_PATH}\enable_sandbox.ps1'
+
+    print('\n===== Languages check: =====\n\n')
+    langs()
+    print('===== Sending files with Sandbox disabled: =====\n')
+    send_sbd()    # send a list of files with sandbox disabled
     print('Wait 2 minutes to finish processing files with sandbox disabled')
     time.sleep(120)    # Wait 2 minutes to finish processing files with sandbox disabled
     print('enabling sandbox and sending messages')
+    script_path3 = fr'{OTHER_DATA_PATH}\enable_sandbox.ps1'
     run_powershell_script(script_path3)    # enable sandbox
     print('\n')
     send_ebd()    # send a list of files with sandbox enabled 
     print('\n\nFinished')
+
 
 if __name__ == '__main__':
     main()
