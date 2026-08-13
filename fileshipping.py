@@ -100,12 +100,12 @@ def release_many(ids, token):
 def get_list_and_perform_release(token):
 
     # Testing parameters (comment after testing and push to prod
-    current_time = (datetime.now() - timedelta(hours=3)).strftime("%Y-%m-%d %H:%M:%S")
-    current_time2 = (datetime.now() - timedelta(hours=3, minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
+    # current_time = (datetime.now() - timedelta(hours=3)).strftime("%Y-%m-%d %H:%M:%S")
+    # current_time2 = (datetime.now() - timedelta(hours=3, minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
 
     # Prod parameters
-    # current_time = (datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    # current_time2 = (datetime.now() - timedelta(minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
+    current_time = (datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    current_time2 = (datetime.now() - timedelta(minutes=30)).strftime("%Y-%m-%d %H:%M:%S")
 
     url1 = f"https://staging2securemail.azurewebsites.net/api/quarantine/emails/?quarantineId=12046&startDate={current_time2}&finishDate={current_time}&direction=In&QuarantineStatus=InQuarantine"
     
